@@ -1,0 +1,24 @@
+{
+  "projectName": "vue-hooks",
+  "projectOwner": "u3u",
+  "repoType": "github",
+  "files": [
+    "README.md"
+  ],
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "u3u",
+      "name": "u3u",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/20062482?v=4",
+      "profile": "https://qwq.cat",
+      "contributions": [
+        "code",
+        "doc",
+        "example",
+        "test"
+      ]
+    }
+  ]
+}

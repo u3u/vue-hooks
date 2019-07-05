@@ -1,0 +1,6 @@
+{
+  "eslint.autoFixOnSave": true,
+  "eslint.enable": true,
+  "npm.packageManager": "yarn",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

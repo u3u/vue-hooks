@@ -1,0 +1,31 @@
+{
+  "vue-hook": {
+    "scope": "typescript",
+    "prefix": "use",
+    "body": [
+      "import { $1 } from 'vue-function-api';",
+      "",
+      "export default function use${2:Hook}() {",
+      "  $3",
+      "}",
+      ""
+    ],
+    "description": "create a vue hook"
+  },
+  "vue-hook-test": {
+    "scope": "typescript",
+    "prefix": "test",
+    "body": [
+      "import ${1:useHook} from '../${1:useHook}';",
+      "import renderHook from '../util/renderHook';",
+      "",
+      "describe('${1:useHook}', () => {",
+      "  it('should be defined', () => {",
+      "    expect(${1:useHook}).toBeDefined();",
+      "  });",
+      "});",
+      ""
+    ],
+    "description": "test a vue hook"
+  }
+}
