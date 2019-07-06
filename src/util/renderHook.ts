@@ -1,27 +1,13 @@
 /* eslint import/no-extraneous-dependencies: off */
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import { plugin, createComponent } from 'vue-function-api';
-import VueRouter from 'vue-router';
+import { Router, Store } from '../mocks';
 
 const localVue = createLocalVue();
+const router = Router(localVue);
+const store = Store(localVue);
 
-localVue.use(VueRouter);
 localVue.use(plugin);
-
-const router = new VueRouter({
-  routes: [
-    {
-      path: '/',
-      name: 'index',
-      meta: { title: 'Vue Hooks' },
-    },
-    {
-      path: '*',
-      name: '404',
-      meta: { title: '404 - Not Found' },
-    },
-  ],
-});
 
 export default function renderHook(hook: Function) {
   const App = createComponent({
@@ -39,6 +25,7 @@ export default function renderHook(hook: Function) {
   return shallowMount(App, {
     localVue,
     router,
+    store,
     stubs: ['router-view'],
   });
 }
