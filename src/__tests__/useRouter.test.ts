@@ -20,7 +20,7 @@ describe('useRouter', () => {
     expect(vm).toHaveProperty('router');
   });
 
-  it('should route to be correct', () => {
+  it('should update route', () => {
     const { vm } = renderHook(useRouter);
     expect(vm.route.name).toBe('index');
     expect(vm.route.meta.title).toBe('Vue Hooks');

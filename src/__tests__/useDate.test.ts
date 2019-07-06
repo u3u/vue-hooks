@@ -18,7 +18,7 @@ describe('useDate', () => {
     expect(vm).toHaveProperty('date');
   });
 
-  it('should date to be correct', () => {
+  it('should be same date', () => {
     const { vm } = renderHook(() => ({
       dateA: useDate('2019-05-20'),
       dateB: useDate('2019-05-21'),
