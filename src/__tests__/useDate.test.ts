@@ -1,13 +1,6 @@
 import useDate, { dayjs } from '../useDate';
 import renderHook from '../util/renderHook';
 
-declare module 'vue/types/vue' {
-  interface Vue {
-    dateA: dayjs.Dayjs;
-    dateB: dayjs.Dayjs;
-  }
-}
-
 describe('useDate', () => {
   it('should be defined', () => {
     expect(useDate).toBeDefined();
@@ -19,12 +12,11 @@ describe('useDate', () => {
   });
 
   it('should be same date', () => {
-    const { vm } = renderHook(() => ({
+    type Inject = { dateA: dayjs.Dayjs; dateB: dayjs.Dayjs };
+    const { vm } = renderHook<Inject>(() => ({
       dateA: useDate('2019-05-20'),
       dateB: useDate('2019-05-21'),
     }));
-    const dateA = vm.dateA as dayjs.Dayjs;
-    const dateB = vm.dateB as dayjs.Dayjs;
-    expect(dateB.add(-1, 'day').isSame(dateA)).toBe(true);
+    expect(vm.dateB.add(-1, 'day').isSame(vm.dateA)).toBe(true);
   });
 });

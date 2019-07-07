@@ -2,12 +2,6 @@ import { Store } from 'vuex';
 import useStore from '../useStore';
 import renderHook from '../util/renderHook';
 
-declare module 'vue/types/vue' {
-  interface Vue {
-    store: Store<any>;
-  }
-}
-
 describe('useStore', () => {
   it('should be defined', () => {
     expect(useStore).toBeDefined();
@@ -19,7 +13,8 @@ describe('useStore', () => {
   });
 
   it('should update store', () => {
-    const { vm } = renderHook(() => ({ store: useStore() }));
+    type Inject = { store: Store<any> };
+    const { vm } = renderHook<Inject>(() => ({ store: useStore() }));
     expect(vm.store.state.count).toBe(0);
     expect(vm.store.getters.plusOne).toBe(1);
     expect(vm.store.state.test.count).toBe(0);
