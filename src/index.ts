@@ -1,9 +1,10 @@
-/* eslint import/prefer-default-export: off */
-import Vue from 'vue';
-import { plugin } from 'vue-function-api';
-
-Vue.use(plugin);
+import { VueConstructor } from 'vue';
+import { setRuntimeVM } from './util/runtime';
 
 export * from './useDate';
 export { default as useDate } from './useDate';
 export { default as useWindowSize } from './useWindowSize';
+
+export default function install(Vue: VueConstructor) {
+  Vue.mixin({ beforeCreate: setRuntimeVM });
+}

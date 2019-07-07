@@ -1,8 +1,9 @@
 import { computed } from 'vue-function-api';
-import withContext from './util/withContext';
+import { getRuntimeVM } from './util/runtime';
 
-export default withContext(function useRouter(vue) {
-  const route = computed(() => vue.$route);
-  const router = computed(() => vue.$router);
+export default function useRouter() {
+  const vm = getRuntimeVM();
+  const route = computed(() => vm.$route);
+  const router = computed(() => vm.$router);
   return { route, router };
-});
+}

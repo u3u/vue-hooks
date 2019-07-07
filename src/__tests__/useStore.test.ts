@@ -14,12 +14,12 @@ describe('useStore', () => {
   });
 
   it('should have store property', () => {
-    const { vm } = renderHook((context) => ({ store: useStore(context) }));
+    const { vm } = renderHook(() => ({ store: useStore() }));
     expect(vm).toHaveProperty('store');
   });
 
   it('should update store', () => {
-    const { vm } = renderHook((context) => ({ store: useStore(context) }));
+    const { vm } = renderHook(() => ({ store: useStore() }));
     expect(vm.store.state.count).toBe(0);
     expect(vm.store.getters.plusOne).toBe(1);
     expect(vm.store.state.test.count).toBe(0);

@@ -1,8 +1,9 @@
 import { computed } from 'vue-function-api';
 import { Store } from 'vuex';
-import withContext from './util/withContext';
+import { getRuntimeVM } from './util/runtime';
 
-export default withContext(function useStore<TState>(vue) {
-  const store = computed(() => vue.$store as Store<TState>);
+export default function useStore<TState>() {
+  const vm = getRuntimeVM();
+  const store = computed(() => vm.$store as Store<TState>);
   return store;
-});
+}
