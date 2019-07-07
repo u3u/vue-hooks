@@ -2,11 +2,9 @@ import VueRouter, { Route } from 'vue-router';
 import useRouter from '../useRouter';
 import renderHook from '../util/renderHook';
 
-declare module 'vue/types/vue' {
-  interface Vue {
-    route: Route;
-    router: VueRouter;
-  }
+interface InjectRouter {
+  route: Route;
+  router: VueRouter;
 }
 
 describe('useRouter', () => {
@@ -21,7 +19,7 @@ describe('useRouter', () => {
   });
 
   it('should update route', () => {
-    const { vm } = renderHook(useRouter);
+    const { vm } = renderHook<InjectRouter>(useRouter);
     expect(vm.route.name).toBe('index');
     expect(vm.route.meta.title).toBe('Vue Hooks');
 

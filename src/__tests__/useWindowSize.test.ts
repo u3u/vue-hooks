@@ -1,13 +1,11 @@
 import useWindowSize from '../useWindowSize';
 import renderHook from '../util/renderHook';
 
-declare module 'vue/types/vue' {
-  interface Vue {
-    width: number;
-    height: number;
-    widthPixel: string;
-    heightPixel: string;
-  }
+interface InjectWindowSize {
+  width: number;
+  height: number;
+  widthPixel: string;
+  heightPixel: string;
 }
 
 enum SizeType {
@@ -37,7 +35,7 @@ describe('useWindowSize', () => {
   });
 
   it('should update width', () => {
-    const { vm } = renderHook(useWindowSize);
+    const { vm } = renderHook<InjectWindowSize>(useWindowSize);
     triggerResize(SizeType.width, 1280);
     expect(vm.width).toBe(1280);
     expect(vm.widthPixel).toBe('1280px');
@@ -47,7 +45,7 @@ describe('useWindowSize', () => {
   });
 
   it('should update height', () => {
-    const { vm } = renderHook(useWindowSize);
+    const { vm } = renderHook<InjectWindowSize>(useWindowSize);
     triggerResize(SizeType.height, 800);
     expect(vm.height).toBe(800);
     expect(vm.heightPixel).toBe('800px');
