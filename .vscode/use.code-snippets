@@ -16,12 +16,12 @@
     "scope": "typescript",
     "prefix": "test",
     "body": [
-      "import ${1:useHook} from '../${1:useHook}';",
+      "import use${1:Hook} from '../use${1:Hook}';",
       "import renderHook from '../util/renderHook';",
       "",
-      "describe('${1:useHook}', () => {",
+      "describe('use${1:Hook}', () => {",
       "  it('should be defined', () => {",
-      "    expect(${1:useHook}).toBeDefined();",
+      "    expect(use${1:Hook}).toBeDefined();",
       "  });",
       "});",
       ""
