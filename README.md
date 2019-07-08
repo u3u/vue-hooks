@@ -1,4 +1,4 @@
-# vue-hooks ![NPM Version](https://img.shields.io/npm/v/@u3u/vue-hooks.svg) ![Build Status](https://img.shields.io/travis/u3u/vue-hooks/master.svg) ![Code Coverage](https://img.shields.io/codecov/c/github/u3u/vue-hooks.svg)
+# vue-hooks [![NPM Version](https://img.shields.io/npm/v/@u3u/vue-hooks.svg)](https://www.npmjs.com/package/@u3u/vue-hooks) [![Build Status](https://img.shields.io/travis/u3u/vue-hooks/master.svg)](https://travis-ci.org/u3u/vue-hooks) [![Code Coverage](https://img.shields.io/codecov/c/github/u3u/vue-hooks.svg)](https://codecov.io/gh/u3u/vue-hooks)
 
 > ⚡️ Awesome Vue Hooks
 
