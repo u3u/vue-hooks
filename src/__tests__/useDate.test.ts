@@ -19,4 +19,17 @@ describe('useDate', () => {
     }));
     expect(vm.dateB.add(-1, 'day').isSame(vm.dateA)).toBe(true);
   });
+
+  it('should update date', () => {
+    type Inject = { date: dayjs.Dayjs };
+    const { vm } = renderHook<Inject>(() => ({
+      date: useDate(Date.now(), 1000),
+    }));
+
+    const timerId = setInterval(() => {
+      expect(vm.date.isSame(Date.now())).toBe(true);
+    }, 1000);
+
+    setTimeout(() => clearInterval(timerId), 3000);
+  });
 });
