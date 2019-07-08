@@ -45,9 +45,14 @@ export default createComponent({
 
 ## Hooks
 
-- [`useRouter`](./src/useRouter.ts) &mdash; A hook for [`vue-router`](https://github.com/vuejs/vue-router).
 - [`useDate`](./src/useDate.ts) &mdash; Using [`dayjs`](https://github.com/iamkun/dayjs) to process date.
 - [`useWindowSize`](./src/useWindowSize.ts) &mdash; Tracks `window` dimensions.
+- [`useRouter`](./src/useRouter.ts) &mdash; A hook for [`vue-router`](https://github.com/vuejs/vue-router).
+- [`useStore`](./src/useStore.ts) &mdash; A hook for [`vuex`](https://github.com/vuejs/vuex).
+- [`useState`](./src/useState.ts) &mdash; A hook for [`mapState`](https://vuex.vuejs.org/api/#mapstate).
+- [`useGetters`](./src/useGetters.ts) &mdash; A hook for [`mapGetters`](https://vuex.vuejs.org/api/#mapgetters).
+- [`useMutations`](./src/useMutations.ts) &mdash; A hook for [`mapMutations`](https://vuex.vuejs.org/api/#mapactions).
+- [`useActions`](./src/useActions.ts) &mdash; A hook for [`mapActions`](https://vuex.vuejs.org/api/#mapactions).
 
 ## Contributing
 
