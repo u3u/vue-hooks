@@ -11,6 +11,9 @@ export function getRuntimeVM(): Vue {
   throw new ReferenceError('[vue-hooks] Not found vue instance.');
 }
 
-export function setRuntimeVM(this: Vue, vm?: Vue) {
-  runtime.vm = this || vm;
+export function setRuntimeVM(this: Vue, vue?: Vue) {
+  const vm = this || vue;
+  if (typeof vm.$options.setup === 'function') {
+    runtime.vm = vm;
+  }
 }
