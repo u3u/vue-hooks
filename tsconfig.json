@@ -6,6 +6,7 @@
     "jsx": "preserve",
     "allowUmdGlobalAccess": true,
     "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "declaration": true,
     "pretty": true,
@@ -18,7 +19,7 @@
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
     "outDir": "lib",
-    "lib": ["es2018", "dom"]
+    "lib": ["dom", "dom.iterable", "esnext"]
   },
   "exclude": ["node_modules", "lib", "**/__tests__/**/*"]
 }
