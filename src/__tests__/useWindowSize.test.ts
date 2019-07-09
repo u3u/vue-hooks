@@ -53,4 +53,13 @@ describe('useWindowSize', () => {
     expect(vm.height).toBe(667);
     expect(vm.heightPixel).toBe('667px');
   });
+
+  it('should remove the listener', () => {
+    const { vm } = renderHook<InjectWindowSize>(useWindowSize);
+    triggerResize(SizeType.width, 750);
+    vm.$destroy();
+    triggerResize(SizeType.width, 375);
+    expect(vm.width).toBe(750);
+    expect(vm.widthPixel).toBe('750px');
+  });
 });
