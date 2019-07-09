@@ -29,7 +29,7 @@ import { useWindowSize } from '@u3u/vue-hooks';
 export default createComponent({
   setup() {
     const { width, height, widthPixel, heightPixel } = useWindowSize();
-    return { width, height };
+    return { width, height, widthPixel, heightPixel };
   },
 
   render() {
