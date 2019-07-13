@@ -3,12 +3,12 @@ import Vue from 'vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import { plugin, createComponent } from 'vue-function-api';
 import { Context } from 'vue-function-api/dist/types/vue';
-import { Router, Store } from '../mocks';
+import { createRouter, createStore } from '../mocks';
 import hooks from '..';
 
 const localVue = createLocalVue();
-const router = Router(localVue);
-const store = Store(localVue);
+const router = createRouter(localVue);
+const store = createStore(localVue);
 
 localVue.use(hooks);
 localVue.use(plugin);

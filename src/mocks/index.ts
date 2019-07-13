@@ -1,4 +1,4 @@
-import Router from './router';
-import Store from './store';
+import createRouter from './router';
+import createStore from './store';
 
-export { Router, Store };
+export { createRouter, createStore };

@@ -5,7 +5,7 @@ export interface CounterState {
   count: number;
 }
 
-export default function register(localVue: VueConstructor) {
+export default function createStore(localVue: VueConstructor) {
   localVue.use(Vuex);
   return new Vuex.Store<CounterState>({
     state: {
