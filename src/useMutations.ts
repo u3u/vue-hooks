@@ -1,4 +1,3 @@
-import { mapMutations } from 'vuex';
-import createVuexHelper, { Helper } from './helpers/vuex';
+import createVuexHelper, { Helper, useMutations } from './helpers/vuex';
 
-export default createVuexHelper<typeof mapMutations>(Helper.Mutations);
+export default createVuexHelper<useMutations>(Helper.Mutations);

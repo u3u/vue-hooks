@@ -1,4 +1,3 @@
-import { mapActions } from 'vuex';
-import createVuexHelper, { Helper } from './helpers/vuex';
+import createVuexHelper, { Helper, useActions } from './helpers/vuex';
 
-export default createVuexHelper<typeof mapActions>(Helper.Actions);
+export default createVuexHelper<useActions>(Helper.Actions);

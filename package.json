@@ -12,8 +12,7 @@
   "module": "esm/index.js",
   "files": [
     "lib/",
-    "esm/",
-    "types/"
+    "esm/"
   ],
   "scripts": {
     "test": "jest",

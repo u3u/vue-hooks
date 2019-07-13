@@ -1,13 +1,7 @@
-import { computed, Wrapper } from 'vue-function-api';
-import {
-  useState,
-  useGetters,
-  mapState,
-  mapGetters,
-  mapMutations,
-  mapActions,
-} from 'vuex';
-import { getRuntimeVM } from '../util/runtime';
+import { computed } from 'vue-function-api';
+import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
+import { useState, useGetters, useMutations, useActions } from './interface';
+import { getRuntimeVM } from '../../util/runtime';
 
 export enum Helper {
   State,
@@ -16,7 +10,9 @@ export enum Helper {
   Actions,
 }
 
-function handleComputed(mappedFn: Function): Wrapper<any> {
+type Helpers = useState | useGetters | useMutations | useActions;
+
+function handleComputed(mappedFn: Function) {
   // TypeError: Cannot read property '_modulesNamespaceMap' of undefined
   // You must get `runtimeVM` in real time in the calculation properties.
   return computed(() => mappedFn.call(getRuntimeVM()));
@@ -33,12 +29,6 @@ const helpers = {
   [Helper.Actions]: { fn: mapActions, handler: handleMethods },
 };
 
-export type Helpers =
-  | typeof useState
-  | typeof useGetters
-  | typeof mapMutations
-  | typeof mapActions;
-
 export default function createVuexHelper<T extends Helpers>(h: Helper) {
   const helper = helpers[h];
 
@@ -53,3 +43,5 @@ export default function createVuexHelper<T extends Helpers>(h: Helper) {
     return dictionary;
   }) as T;
 }
+
+export * from './interface';
