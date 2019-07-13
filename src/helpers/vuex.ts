@@ -7,7 +7,7 @@ import {
   mapMutations,
   mapActions,
 } from 'vuex';
-import { getRuntimeVM } from './runtime';
+import { getRuntimeVM } from '../util/runtime';
 
 export enum Helper {
   State,

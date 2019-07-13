@@ -1,4 +1,4 @@
 import { useState } from 'vuex';
-import createVuexHelper, { Helper } from './util/helpers';
+import createVuexHelper, { Helper } from './helpers/vuex';
 
 export default createVuexHelper<typeof useState>(Helper.State);
