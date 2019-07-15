@@ -47,6 +47,7 @@ export default createComponent({
 
 - [`useDate`](./src/useDate.ts) &mdash; Using [`dayjs`](https://github.com/iamkun/dayjs) to process date.
 - [`useWindowSize`](./src/useWindowSize.ts) &mdash; Tracks `window` dimensions.
+- [`useCounter`](./src/useCounter.ts) &mdash; Tracks state of a number.
 - [`useRouter`](./src/useRouter.ts) &mdash; A hook for [`vue-router`](https://github.com/vuejs/vue-router).
 - [`useStore`](./src/useStore.ts) &mdash; A hook for [`vuex`](https://github.com/vuejs/vuex).
 - [`useState`](./src/useState.ts) &mdash; A hook for [`mapState`](https://vuex.vuejs.org/api/#mapstate).
