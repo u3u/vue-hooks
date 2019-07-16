@@ -1,4 +1,2 @@
-import createRouter from './router';
-import createStore from './store';
-
-export { createRouter, createStore };
+export { default as createRouter } from './router';
+export { default as createStore } from './store';
