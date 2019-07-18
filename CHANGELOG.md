@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/u3u/vue-hooks/compare/v1.0.0...v1.1.0) (2019-07-18)
+
+
+### Bug Fixes
+
+* **hooks:** `vm.$router` should not be computed wrapper ([8483d43](https://github.com/u3u/vue-hooks/commit/8483d43))
+
+
+### Features
+
+* **hooks:** add `usePrevious` hook ([f4d0dc8](https://github.com/u3u/vue-hooks/commit/f4d0dc8))
+
 # 1.0.0 (2019-07-17)
 
 
