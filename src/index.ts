@@ -5,6 +5,7 @@ export * from './useDate';
 export { default as useDate } from './useDate';
 export { default as useWindowSize } from './useWindowSize';
 export { default as useCounter } from './useCounter';
+export { default as usePrevious } from './usePrevious';
 export { default as useStore } from './useStore';
 export { default as useState } from './useState';
 export { default as useGetters } from './useGetters';
