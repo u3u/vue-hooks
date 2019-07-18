@@ -1,3 +1,5 @@
 node_modules/
+lib/
+esm/
 package.json
 CHANGELOG.md
