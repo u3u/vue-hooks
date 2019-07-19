@@ -2,5 +2,6 @@
   "singleQuote": true,
   "quoteProps": "consistent",
   "trailingComma": "all",
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "endOfLine": "lf"
 }
