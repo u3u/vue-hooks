@@ -22,7 +22,7 @@ Vue.use(hooks);
 Vue.use(plugin); // Don't forget to use the plugin!
 ```
 
-```js
+```jsx
 import { createComponent } from 'vue-function-api';
 import { useWindowSize } from '@u3u/vue-hooks';
 
