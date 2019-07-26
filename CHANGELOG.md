@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/u3u/vue-hooks/compare/v1.1.0...v1.1.1) (2019-07-26)
+
+
+### Bug Fixes
+
+* **ts:** forgot to export the type definition file ([5cb25ec](https://github.com/u3u/vue-hooks/commit/5cb25ec))
+
 # [1.1.0](https://github.com/u3u/vue-hooks/compare/v1.0.0...v1.1.0) (2019-07-18)
 
 
