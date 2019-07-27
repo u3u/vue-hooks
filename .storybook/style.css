@@ -52,7 +52,7 @@ code[class*='language-']::before {
   color: rgba(255, 255, 255, 0.4);
 }
 
-code[class*='language-js']::before {
+code[class*='language-javascript']::before {
   content: 'js';
 }
 
@@ -60,7 +60,7 @@ code[class*='language-jsx']::before {
   content: 'jsx';
 }
 
-code[class*='language-ts']::before {
+code[class*='language-typescript']::before {
   content: 'ts';
 }
 
