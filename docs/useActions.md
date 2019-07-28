@@ -1,14 +1,14 @@
-# useMutations
+# useActions
 
 > You need to [use a plugin](https://github.com/u3u/vue-hooks#usage) before using this hook.
 
-Vue hook for [`mapMutations`](https://vuex.vuejs.org/api/#mapmutations).
+Vue hook for [`mapActions`](https://vuex.vuejs.org/api/#mapactions).
 
 ## Usage
 
 ```jsx {17,18,24,29,36,37}
 import { createComponent } from 'vue-function-api';
-import { useState, useGetters, useMutations } from '@u3u/vue-hooks';
+import { useState, useGetters, useActions } from '@u3u/vue-hooks';
 
 const Demo = createComponent({
   setup() {
@@ -22,15 +22,15 @@ const Demo = createComponent({
       ...useGetters('test', ['minusOne']),
     };
 
-    const mutations = {
-      ...useMutations(['increment']),
-      ...useMutations('test', ['decrement']),
+    const actions = {
+      ...useActions(['incrementAsync']),
+      ...useActions('test', ['decrementAsync']),
     };
 
     return {
       ...state,
       ...getters,
-      ...mutations,
+      ...actions,
     };
   },
 
@@ -42,8 +42,10 @@ const Demo = createComponent({
         <div>plusOne: {plusOne}</div>
         <div style={{ marginTop: '10px' }}>test/count: {count2}</div>
         <div style={{ marginBottom: '10px' }}>test/minusOne: {minusOne}</div>
-        <button onClick={this.increment}>increment</button>
-        <button onClick={this.decrement}>test/decrement</button>
+        <button onClick={() => this.incrementAsync()}>incrementAsync</button>
+        <button onClick={() => this.decrementAsync()}>
+          test/decrementAsync
+        </button>
       </div>
     );
   },
@@ -53,12 +55,12 @@ const Demo = createComponent({
 ## Reference
 
 ```typescript
-function mapMutations(
+function useActions(
   namespace?: string,
   map: Array<string> | Object<string | function>,
 ): Object;
 ```
 
-> The usage of the `useMutations` hook is exactly the same as the usage of [`mapMutations`](https://vuex.vuejs.org/api/#mapmutations).
+> The usage of the `useActions` hook is exactly the same as the usage of [`mapActions`](https://vuex.vuejs.org/api/#mapactions).
 
-_Please refer to the documentation of [`mapMutations`](https://vuex.vuejs.org/api/#mapmutations) for details._
+_Please refer to the documentation of [`mapActions`](https://vuex.vuejs.org/api/#mapactions) for details._

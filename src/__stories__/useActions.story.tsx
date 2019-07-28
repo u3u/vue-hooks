@@ -3,7 +3,7 @@ import 'vue-tsx-support/enable-check';
 import Vue from 'vue';
 import { storiesOf } from '@storybook/vue';
 import { createComponent } from 'vue-function-api';
-import { useState, useGetters, useMutations } from '..';
+import { useState, useGetters, useActions } from '..';
 import { ShowDocs } from './components';
 import { createStore } from '../mocks';
 
@@ -12,11 +12,11 @@ type Inject = {
   count2: number;
   plusOne: number;
   minusOne: number;
-  increment: () => void;
-  decrement: () => void;
+  incrementAsync: (delay?: number) => void;
+  decrementAsync: (delay?: number) => void;
 };
 
-const Docs = () => <ShowDocs md={require('../../docs/useMutations.md')} />;
+const Docs = () => <ShowDocs md={require('../../docs/useActions.md')} />;
 
 const Demo = createComponent({
   store: createStore(),
@@ -32,15 +32,15 @@ const Demo = createComponent({
       ...useGetters('test', ['minusOne']),
     };
 
-    const mutations = {
-      ...useMutations(['increment']),
-      ...useMutations('test', ['decrement']),
+    const actions = {
+      ...useActions(['incrementAsync']),
+      ...useActions('test', ['decrementAsync']),
     };
 
     return {
       ...state,
       ...getters,
-      ...mutations,
+      ...actions,
     };
   },
 
@@ -52,14 +52,16 @@ const Demo = createComponent({
         <div>plusOne: {plusOne}</div>
         <div style={{ marginTop: '10px' }}>test/count: {count2}</div>
         <div style={{ marginBottom: '10px' }}>test/minusOne: {minusOne}</div>
-        <button onClick={this.increment}>increment</button>
-        <button onClick={this.decrement}>test/decrement</button>
+        <button onClick={() => this.incrementAsync()}>incrementAsync</button>
+        <button onClick={() => this.decrementAsync()}>
+          test/decrementAsync
+        </button>
       </div>
     );
   },
 });
 
-storiesOf('useMutations', module)
+storiesOf('useActions', module)
   // @ts-ignore
   .add('docs', () => Docs)
   .add('demo', () => Demo);
