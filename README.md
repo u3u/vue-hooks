@@ -53,7 +53,7 @@ export default createComponent({
 - [`useStore`](./src/useStore.ts) &mdash; A hook for [`vuex`](https://github.com/vuejs/vuex).
 - [`useState`](./src/useState.ts) &mdash; A hook for [`mapState`](https://vuex.vuejs.org/api/#mapstate).
 - [`useGetters`](./src/useGetters.ts) &mdash; A hook for [`mapGetters`](https://vuex.vuejs.org/api/#mapgetters).
-- [`useMutations`](./src/useMutations.ts) &mdash; A hook for [`mapMutations`](https://vuex.vuejs.org/api/#mapactions).
+- [`useMutations`](./src/useMutations.ts) &mdash; A hook for [`mapMutations`](https://vuex.vuejs.org/api/#mapmutations).
 - [`useActions`](./src/useActions.ts) &mdash; A hook for [`mapActions`](https://vuex.vuejs.org/api/#mapactions).
 
 ## Contributing
