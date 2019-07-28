@@ -26,8 +26,34 @@
   position: relative;
 }
 
+.sb-show-main a,
 .markdown-body a {
   color: #1ea7fd;
+  transition: color 300ms ease;
+}
+
+a.router-link-exact-active {
+  color: #999;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.fade-enter-active {
+  animation: fade 300ms ease;
+}
+
+.fade-leave-active {
+  animation: fade 300ms ease reverse;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .highlighted-line {

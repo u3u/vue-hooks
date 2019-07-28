@@ -4,6 +4,7 @@ import { plugin } from 'vue-function-api';
 import Vue from 'vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
+import hooks from '../src';
 import 'github-markdown-css';
 import 'prismjs/themes/prism-tomorrow.css';
 import './style.css';
@@ -17,6 +18,7 @@ addParameters({
   },
 });
 
+Vue.use(hooks);
 Vue.use(plugin);
 Vue.use(Vuex);
 Vue.use(VueRouter);
