@@ -11,6 +11,10 @@ Vue 3.0 has not been released yet, it allows you to use functional-based compone
 yarn add vue-function-api @u3u/vue-hooks
 ```
 
+## Documentation [![Netlify Status](https://api.netlify.com/api/v1/badges/e93d1698-f766-4529-b8e0-91fa1162d4cb/deploy-status)](https://app.netlify.com/sites/vue-hooks/deploys)
+
+Docs are available at <https://vue-hooks.netlify.com>
+
 ## Usage
 
 ```js
@@ -45,16 +49,16 @@ export default createComponent({
 
 ## Hooks
 
-- [`useDate`](./src/useDate.ts) &mdash; Using [`dayjs`](https://github.com/iamkun/dayjs) to process date.
-- [`useWindowSize`](./src/useWindowSize.ts) &mdash; Tracks `window` dimensions.
-- [`useCounter`](./src/useCounter.ts) &mdash; Tracks state of a number.
-- [`usePrevious`](./src/usePrevious.ts) &mdash; Returns the previous state or props.
-- [`useRouter`](./src/useRouter.ts) &mdash; A hook for [`vue-router`](https://github.com/vuejs/vue-router).
-- [`useStore`](./src/useStore.ts) &mdash; A hook for [`vuex`](https://github.com/vuejs/vuex).
-- [`useState`](./src/useState.ts) &mdash; A hook for [`mapState`](https://vuex.vuejs.org/api/#mapstate).
-- [`useGetters`](./src/useGetters.ts) &mdash; A hook for [`mapGetters`](https://vuex.vuejs.org/api/#mapgetters).
-- [`useMutations`](./src/useMutations.ts) &mdash; A hook for [`mapMutations`](https://vuex.vuejs.org/api/#mapmutations).
-- [`useActions`](./src/useActions.ts) &mdash; A hook for [`mapActions`](https://vuex.vuejs.org/api/#mapactions).
+- [`useDate`](https://vue-hooks.netlify.com/?path=/story/usedate--docs) &mdash; Using [`dayjs`](https://github.com/iamkun/dayjs) to process date.
+- [`useWindowSize`](https://vue-hooks.netlify.com/?path=/story/usewindowsize--docs) &mdash; Tracks `window` dimensions.
+- [`useCounter`](https://vue-hooks.netlify.com/?path=/story/usecounter--docs) &mdash; Tracks state of a number.
+- [`usePrevious`](https://vue-hooks.netlify.com/?path=/story/useprevious--docs) &mdash; Returns the previous state or props.
+- [`useRouter`](https://vue-hooks.netlify.com/?path=/story/userouter--docs) &mdash; A hook for [`vue-router`](https://github.com/vuejs/vue-router).
+- [`useStore`](https://vue-hooks.netlify.com/?path=/story/usestore--docs) &mdash; A hook for [`vuex`](https://github.com/vuejs/vuex).
+- [`useState`](https://vue-hooks.netlify.com/?path=/story/usestate--docs) &mdash; A hook for [`mapState`](https://vuex.vuejs.org/api/#mapstate).
+- [`useGetters`](https://vue-hooks.netlify.com/?path=/story/usegetters--docs) &mdash; A hook for [`mapGetters`](https://vuex.vuejs.org/api/#mapgetters).
+- [`useMutations`](https://vue-hooks.netlify.com/?path=/story/usemutations--docs) &mdash; A hook for [`mapMutations`](https://vuex.vuejs.org/api/#mapmutations).
+- [`useActions`](https://vue-hooks.netlify.com/?path=/story/useactions--docs) &mdash; A hook for [`mapActions`](https://vuex.vuejs.org/api/#mapactions).
 
 ## Contributing
 
