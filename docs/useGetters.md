@@ -8,7 +8,7 @@ Vue hook for [`mapGetters`](https://vuex.vuejs.org/api/#mapgetters).
 
 ```jsx {8,9,15,19}
 import { createComponent } from 'vue-function-api';
-import { useGetters } from '@u3u/vue-hooks';
+import { useStore, useGetters } from '@u3u/vue-hooks';
 
 const Demo = createComponent({
   setup() {
