@@ -1,8 +1,8 @@
 import { VueConstructor } from 'vue';
 import VueRouter from 'vue-router';
 
-export default function createRouter(localVue: VueConstructor) {
-  localVue.use(VueRouter);
+export default function createRouter(Vue?: VueConstructor) {
+  if (Vue) Vue.use(VueRouter);
   return new VueRouter({
     routes: [
       {

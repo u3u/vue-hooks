@@ -5,8 +5,8 @@ export interface CounterState {
   count: number;
 }
 
-export default function createStore(localVue: VueConstructor) {
-  localVue.use(Vuex);
+export default function createStore(Vue?: VueConstructor) {
+  if (Vue) Vue.use(Vuex);
   return new Vuex.Store<CounterState>({
     state: {
       count: 0,
