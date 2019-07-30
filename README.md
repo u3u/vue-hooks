@@ -17,6 +17,8 @@ Docs are available at <https://vue-hooks.netlify.com>
 
 ## Usage
 
+[![Edit Vue Hooks Examples](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-template-66f2o?expanddevtools=1&fontsize=12&module=%2Fsrc%2FApp.vue)
+
 ```js
 import Vue from 'vue';
 import { plugin } from 'vue-function-api';
