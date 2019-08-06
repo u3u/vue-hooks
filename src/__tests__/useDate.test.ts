@@ -1,10 +1,17 @@
 import { onMounted, onUnmounted } from 'vue-function-api';
-import { useDate } from '..';
+import { useDate, dayjs } from '..';
 import renderHook from '../util/renderHook';
 
 describe('useDate', () => {
   it('should be defined', () => {
     expect(useDate).toBeDefined();
+  });
+
+  it('should be have default date', () => {
+    renderHook(() => {
+      const date = useDate();
+      expect(date.value).toBeInstanceOf(dayjs.Dayjs);
+    });
   });
 
   it('should be same date', () => {
