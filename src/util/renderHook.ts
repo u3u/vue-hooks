@@ -2,7 +2,7 @@
 import Vue from 'vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import { plugin, createComponent } from 'vue-function-api';
-import { Context } from 'vue-function-api/dist/types/vue';
+import { SetupContext } from 'vue-function-api/dist/types/vue';
 import { createRouter, createStore } from '../mocks';
 import hooks from '..';
 
@@ -16,7 +16,7 @@ localVue.use(plugin);
 export type SetupFunction<Props> = (
   this: undefined,
   props: { [K in keyof Props]: Props[K] },
-  context: Context,
+  context: SetupContext,
 ) => object | null | undefined | void;
 
 export default function renderHook<V, Props = unknown>(
