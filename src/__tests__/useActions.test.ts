@@ -1,4 +1,4 @@
-import useActions from '../useActions';
+import { useActions } from '..';
 import renderHook from '../util/renderHook';
 
 interface InjectActions {

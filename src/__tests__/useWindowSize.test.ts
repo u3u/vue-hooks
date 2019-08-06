@@ -1,4 +1,4 @@
-import useWindowSize from '../useWindowSize';
+import { useWindowSize } from '..';
 import renderHook from '../util/renderHook';
 
 interface InjectWindowSize {

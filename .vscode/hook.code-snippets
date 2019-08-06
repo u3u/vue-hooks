@@ -16,7 +16,7 @@
     "scope": "typescript",
     "prefix": "test",
     "body": [
-      "import use${1:Hook} from '../use${1:Hook}';",
+      "import { use${1:Hook} } from '..';",
       "import renderHook from '../util/renderHook';",
       "",
       "describe('use${1:Hook}', () => {",

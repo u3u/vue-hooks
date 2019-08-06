@@ -1,5 +1,5 @@
 import { onMounted, onUnmounted } from 'vue-function-api';
-import useDate from '../useDate';
+import { useDate } from '..';
 import renderHook from '../util/renderHook';
 
 describe('useDate', () => {

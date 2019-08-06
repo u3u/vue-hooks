@@ -1,4 +1,4 @@
-import useGetters from '../useGetters';
+import { useGetters } from '..';
 import renderHook from '../util/renderHook';
 
 describe('useGetters', () => {

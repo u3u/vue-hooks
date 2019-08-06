@@ -1,4 +1,4 @@
-import useState from '../useState';
+import { useState } from '..';
 import renderHook from '../util/renderHook';
 
 describe('useState', () => {

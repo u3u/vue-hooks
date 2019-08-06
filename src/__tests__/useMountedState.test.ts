@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { onMounted } from 'vue-function-api';
-import useMountedState from '../useMountedState';
+import { useMountedState } from '..';
 import renderHook from '../util/renderHook';
 
 describe('useMountedState', () => {

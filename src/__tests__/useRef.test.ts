@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { computed, onMounted } from 'vue-function-api';
-import useRef from '../useRef';
+import { useRef } from '..';
 import renderHook from '../util/renderHook';
 
 describe('useRef', () => {

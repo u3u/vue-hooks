@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { value } from 'vue-function-api';
-import usePrevious from '../usePrevious';
+import { usePrevious } from '..';
 import renderHook from '../util/renderHook';
 
 describe('usePrevious', () => {

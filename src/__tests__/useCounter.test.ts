@@ -1,4 +1,4 @@
-import useCounter from '../useCounter';
+import { useCounter } from '..';
 import renderHook from '../util/renderHook';
 
 describe('useCounter', () => {

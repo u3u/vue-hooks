@@ -1,4 +1,4 @@
-import useMutations from '../useMutations';
+import { useMutations } from '..';
 import renderHook from '../util/renderHook';
 
 interface InjectMutations {

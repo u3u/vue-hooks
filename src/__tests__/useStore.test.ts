@@ -1,5 +1,5 @@
 import { Store } from 'vuex';
-import useStore from '../useStore';
+import { useStore } from '..';
 import renderHook from '../util/renderHook';
 
 describe('useStore', () => {

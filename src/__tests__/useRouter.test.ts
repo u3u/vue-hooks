@@ -1,4 +1,4 @@
-import useRouter from '../useRouter';
+import { useRouter } from '..';
 import renderHook from '../util/renderHook';
 
 describe('useRouter', () => {
