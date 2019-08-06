@@ -24,8 +24,9 @@ export default function renderHook<V, Props = unknown>(
 ) {
   const App = createComponent({
     template: `
-      <div id="app">
-        <router-view></router-view>
+      <div ref="app" id="app" :style="{ width: '1280px', height: '800px' }">
+        <nav ref="nav" :style="{ width: '100%' }" />
+        <router-view />
       </div>
     `,
 
