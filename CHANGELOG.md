@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/u3u/vue-hooks/compare/v1.1.1...v1.2.0) (2019-08-06)
+
+
+### Features
+
+* **hooks:** add `useMountedState` hook ([1e70d5e](https://github.com/u3u/vue-hooks/commit/1e70d5e))
+* **hooks:** add `useRef` hook ([f600ab8](https://github.com/u3u/vue-hooks/commit/f600ab8))
+
 ## [1.1.1](https://github.com/u3u/vue-hooks/compare/v1.1.0...v1.1.1) (2019-07-26)
 
 
