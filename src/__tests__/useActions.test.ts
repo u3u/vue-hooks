@@ -30,6 +30,8 @@ describe('useActions', () => {
     expect(vm.$store.state.count).toBe(0);
     expect(vm.$store.state.test.count).toBe(0);
 
+    jest.useFakeTimers();
+
     vm.incrementAsync(0);
     vm.decrementAsync(0);
 
@@ -37,5 +39,7 @@ describe('useActions', () => {
       expect(vm.$store.state.count).toBe(1);
       expect(vm.$store.state.test.count).toBe(-1);
     });
+
+    jest.runAllTimers();
   });
 });
