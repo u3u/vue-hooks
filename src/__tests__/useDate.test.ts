@@ -10,7 +10,7 @@ describe('useDate', () => {
   it('should be have default date', () => {
     renderHook(() => {
       const date = useDate();
-      expect(date.value).toBeInstanceOf(dayjs.Dayjs);
+      expect(date.value).toBeInstanceOf(dayjs);
     });
   });
 
