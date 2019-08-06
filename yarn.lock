@@ -12444,10 +12444,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
 
-vue-function-api@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/vue-function-api/-/vue-function-api-2.0.6.tgz#d3fc7a02ce9599d0af3869fbc76a43d88aeace24"
-  integrity sha512-iOS/PYLFrpnX1PzmC30IZMmfB/+94D4BRGkoGHxquvuJjlHUAbuQ9GpVVExkWpdBrf1wv/YqN89pfbxhmnMa1Q==
+vue-function-api@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/vue-function-api/-/vue-function-api-2.1.1.tgz#754915018375deaca16eb2ee00be9d99680e22ae"
+  integrity sha512-NZAaPRv4xTCiwy6tArMo+TOk54J2gzxGUYfztIj9qHF3uMxUkyh8G4J+HZ/25V9FFaL1kaPMepRsUHm5EXur5w==
   dependencies:
     tslib "^1.9.3"
 
@@ -12467,10 +12467,10 @@ vue-loader@^15.7.1:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-router@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.1.0.tgz#e193d2de7abff75fd793a038a92bdb399259327c"
-  integrity sha512-i1jCgNtJeRqIXPz91BAZ9/eSnqiQjJHXIToOmeqBtKLSqt4Ok8vzBhVJ/pd/nDDX4wQ5OfVXRn9BaCkI19nZsA==
+vue-router@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.1.1.tgz#0893c29548ba2dbe35ed104dcd1aa06743aa0ead"
+  integrity sha512-RAFCIQjs4gbDV7YNH44c1GT0jXSTFvNhKh3o0xiA/UWI1EM7Eriv45n8kM+R8NZ58wXEGtKVaDVBlrXJBuM/Bg==
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
