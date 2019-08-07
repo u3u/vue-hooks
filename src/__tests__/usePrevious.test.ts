@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { value } from 'vue-function-api';
+import { value, state } from 'vue-function-api';
 import { usePrevious } from '..';
 import renderHook from '../util/renderHook';
 
@@ -8,7 +8,7 @@ describe('usePrevious', () => {
     expect(usePrevious).toBeDefined();
   });
 
-  it('should be previous count', () => {
+  it('should be previous wrapper count', () => {
     renderHook(async () => {
       const count = value(0);
       const prevCount = usePrevious(count);
@@ -26,6 +26,28 @@ describe('usePrevious', () => {
 
       await Vue.nextTick();
       expect(count.value).toBe(0);
+      expect(prevCount.value).toBe(1);
+    });
+  });
+
+  it('should be previous state count', () => {
+    renderHook(async () => {
+      let count = state(0);
+      const prevCount = usePrevious(() => count);
+
+      expect(count).toBe(0);
+      expect(prevCount.value).toBeUndefined();
+
+      count += 1;
+
+      await Vue.nextTick();
+      expect(count).toBe(1);
+      expect(prevCount.value).toBe(0);
+
+      count -= 1;
+
+      await Vue.nextTick();
+      expect(count).toBe(0);
       expect(prevCount.value).toBe(1);
     });
   });
