@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/u3u/vue-hooks/compare/v1.2.0...v1.3.0) (2019-08-07)
+
+
+### Bug Fixes
+
+* **hooks:** fix `usePrevious` does not work when passing state ([8567a04](https://github.com/u3u/vue-hooks/commit/8567a04))
+
+
+### Features
+
+* **hooks:** add `useTimeout` hook ([61db981](https://github.com/u3u/vue-hooks/commit/61db981))
+
 # [1.2.0](https://github.com/u3u/vue-hooks/compare/v1.1.1...v1.2.0) (2019-08-06)
 
 
