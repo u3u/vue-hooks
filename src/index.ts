@@ -14,6 +14,7 @@ export { default as useActions } from './useActions';
 export { default as useRouter } from './useRouter';
 export { default as useRef } from './useRef';
 export { default as useMountedState } from './useMountedState';
+export { default as useTimeout } from './useTimeout';
 
 export default function install(Vue: VueConstructor) {
   Vue.mixin({ beforeCreate: setRuntimeVM });
