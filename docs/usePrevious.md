@@ -36,7 +36,7 @@ const Demo = createComponent({
 ## Reference
 
 ```typescript
-function usePrevious<T>(state: T | Wrapper<T>): Wrapper<T | undefined>;
+function usePrevious<T>(state: Wrapper<T> | (() => T)): Wrapper<T>;
 ```
 
 ### `Arguments`
@@ -45,11 +45,10 @@ function usePrevious<T>(state: T | Wrapper<T>): Wrapper<T | undefined>;
 
   `props` or `Wrapper<any>`
 
-  - Type: [`T | Wrapper<T>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
-  - Default: `undefined`
+  - Type: [`Wrapper<T> | (() => T)`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
 
 ### `ReturnValue`
 
-- [`Wrapper<T | undefined>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
+- [`Wrapper<T>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
 
 _[`T`](https://www.typescriptlang.org/docs/handbook/generics.html) depends on your `arguments` type_
