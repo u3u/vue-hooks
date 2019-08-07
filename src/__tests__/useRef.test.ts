@@ -42,4 +42,19 @@ describe('useRef', () => {
       });
     });
   });
+
+  /* eslint-disable no-console */
+  it('should throw type error exception when passing object', () => {
+    console.error = jest.fn();
+
+    Vue.config.warnHandler = (msg) => {
+      expect(msg).toMatch('TypeError: Target must be string or function.');
+    };
+
+    renderHook((_, { refs }) => {
+      // @ts-ignore
+      useRef(refs.nav);
+    });
+  });
+  /* eslint-enable no-console */
 });
