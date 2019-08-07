@@ -9,7 +9,7 @@ describe('usePrevious', () => {
   });
 
   it('should be previous count', () => {
-    renderHook(() => {
+    renderHook(async () => {
       const count = value(0);
       const prevCount = usePrevious(count);
 
@@ -18,17 +18,15 @@ describe('usePrevious', () => {
 
       count.value += 1;
 
-      Vue.nextTick().then(() => {
-        expect(count.value).toBe(1);
-        expect(prevCount.value).toBe(0);
+      await Vue.nextTick();
+      expect(count.value).toBe(1);
+      expect(prevCount.value).toBe(0);
 
-        count.value -= 1;
+      count.value -= 1;
 
-        Vue.nextTick().then(() => {
-          expect(count.value).toBe(0);
-          expect(prevCount.value).toBe(1);
-        });
-      });
+      await Vue.nextTick();
+      expect(count.value).toBe(0);
+      expect(prevCount.value).toBe(1);
     });
   });
 });
