@@ -1,9 +1,9 @@
 import { value, watch, Wrapper } from 'vue-function-api';
 
-export default function usePrevious<T>(state: Wrapper<T> | T) {
-  const previous = value<T | undefined>(undefined);
+export default function usePrevious<T>(state: Wrapper<T> | (() => T)) {
+  const previous = value<T>(undefined!);
 
-  watch('value' in state ? state : () => state, (_, oldVal) => {
+  watch(state, (_, oldVal) => {
     previous.value = oldVal;
   });
 

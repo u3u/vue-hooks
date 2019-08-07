@@ -32,22 +32,22 @@ describe('usePrevious', () => {
 
   it('should be previous state count', () => {
     renderHook(async () => {
-      let count = state(0);
-      const prevCount = usePrevious(() => count);
+      const store = state({ count: 0 });
+      const prevCount = usePrevious(() => store.count);
 
-      expect(count).toBe(0);
+      expect(store.count).toBe(0);
       expect(prevCount.value).toBeUndefined();
 
-      count += 1;
+      store.count += 1;
 
       await Vue.nextTick();
-      expect(count).toBe(1);
+      expect(store.count).toBe(1);
       expect(prevCount.value).toBe(0);
 
-      count -= 1;
+      store.count -= 1;
 
       await Vue.nextTick();
-      expect(count).toBe(0);
+      expect(store.count).toBe(0);
       expect(prevCount.value).toBe(1);
     });
   });
