@@ -12445,9 +12445,9 @@ vm-browserify@^1.0.1:
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
 
 vue-function-api@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/vue-function-api/-/vue-function-api-2.1.1.tgz#754915018375deaca16eb2ee00be9d99680e22ae"
-  integrity sha512-NZAaPRv4xTCiwy6tArMo+TOk54J2gzxGUYfztIj9qHF3uMxUkyh8G4J+HZ/25V9FFaL1kaPMepRsUHm5EXur5w==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/vue-function-api/-/vue-function-api-2.2.0.tgz#06aeb76fcbcf27d8591a1f87cee8d3d771d7feed"
+  integrity sha512-Qyg5IIi+1Zj5U3aHQ55K8nB98BwytxDv0HGWPssQFo9M32QDXHIwzgSE+BhUlzyclb1XkPiLubXApja1WQSwSQ==
   dependencies:
     tslib "^1.9.3"
 
