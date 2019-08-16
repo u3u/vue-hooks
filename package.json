@@ -120,8 +120,12 @@
   },
   "lint-staged": {
     "*.ts": [
-      "eslint"
+      "eslint --fix"
     ],
-    "*.{ts,md,mdx}": "prettier --check"
+    "*.{ts,md,mdx}": [
+      "prettier --write",
+      "prettier --check",
+      "git add"
+    ]
   }
 }
