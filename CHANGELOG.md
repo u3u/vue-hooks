@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/u3u/vue-hooks/compare/v1.3.0...v1.4.0) (2019-08-16)
+
+
+### Bug Fixes
+
+* **deps:** move to dev dependencies ([8a64b14](https://github.com/u3u/vue-hooks/commit/8a64b14))
+
+
+### Features
+
+* **hooks:** add `useMedia` hook ([dee851e](https://github.com/u3u/vue-hooks/commit/dee851e))
+
 # [1.3.0](https://github.com/u3u/vue-hooks/compare/v1.2.0...v1.3.0) (2019-08-07)
 
 
