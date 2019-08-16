@@ -54,11 +54,7 @@
     "node": ">=10.16.0"
   },
   "dependencies": {
-    "dayjs": "^1.8.15",
-    "vue": "^2.6.10",
-    "vue-function-api": "^2.2.0",
-    "vue-router": "^3.1.2",
-    "vuex": "^3.1.1"
+    "dayjs": "^1.8.15"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -100,9 +96,13 @@
     "rimraf": "^3.0.0",
     "semantic-release": "^15.13.21",
     "typescript": "^3.5.3",
+    "vue": "^2.6.10",
+    "vue-function-api": "^2.2.0",
     "vue-loader": "^15.7.1",
+    "vue-router": "^3.1.2",
     "vue-template-compiler": "^2.6.10",
     "vue-tsx-support": "^2.3.1",
+    "vuex": "^3.1.1",
     "yorkie": "^2.0.0"
   },
   "release": {
