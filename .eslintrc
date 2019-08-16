@@ -14,6 +14,7 @@
   "rules": {
     "no-undef": "off",
     "no-unused-vars": "off",
-    "global-require": "off"
+    "global-require": "off",
+    "import/no-extraneous-dependencies": "off"
   }
 }
