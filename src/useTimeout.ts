@@ -1,7 +1,7 @@
-import { value, onMounted, onUnmounted } from 'vue-function-api';
+import { ref, onMounted, onUnmounted } from '@vue/composition-api';
 
 export default function useTimeout(delay = 0) {
-  const ready = value(false);
+  const ready = ref(false);
   let timerId: number;
 
   onMounted(() => {

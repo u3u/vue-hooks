@@ -1,8 +1,8 @@
-import { value, onMounted, onUnmounted } from 'vue-function-api';
+import { ref, onMounted, onUnmounted } from '@vue/composition-api';
 
 export default function useMedia(query, defaultState = false) {
   let mql;
-  const matches = value(defaultState);
+  const matches = ref(defaultState);
   const updateMatches = () => {
     if (mql) matches.value = mql.matches;
   };

@@ -1,4 +1,4 @@
-import { onMounted, onUnmounted } from 'vue-function-api';
+import { onMounted, onUnmounted } from '@vue/composition-api';
 import { useTimeout } from '..';
 import renderHook from '../util/renderHook';
 

@@ -3,7 +3,7 @@ import 'vue-tsx-support/enable-check';
 import Vue from 'vue';
 import { Store } from 'vuex';
 import { storiesOf } from '@storybook/vue';
-import { createComponent, computed } from 'vue-function-api';
+import { createComponent, computed } from '@vue/composition-api';
 import { useStore } from '..';
 import { ShowDocs } from './components';
 import { createStore } from '../mocks';

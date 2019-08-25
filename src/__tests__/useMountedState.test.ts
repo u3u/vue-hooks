@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { onMounted } from 'vue-function-api';
+import { onMounted } from '@vue/composition-api';
 import { useMountedState } from '..';
 import renderHook from '../util/renderHook';
 

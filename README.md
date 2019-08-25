@@ -21,15 +21,15 @@ Docs are available at <https://vue-hooks.netlify.com>
 
 ```js
 import Vue from 'vue';
-import { plugin } from 'vue-function-api';
+import VueCompositionAPI from '@vue/composition-api';
 import hooks from '@u3u/vue-hooks';
 
 Vue.use(hooks);
-Vue.use(plugin); // Don't forget to use the plugin!
+Vue.use(VueCompositionAPI); // Don't forget to use the plugin!
 ```
 
 ```jsx
-import { createComponent } from 'vue-function-api';
+import { createComponent } from '@vue/composition-api';
 import { useWindowSize } from '@u3u/vue-hooks';
 
 export default createComponent({

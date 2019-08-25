@@ -7,7 +7,7 @@ Vue hook for [vue-router](https://router.vuejs.org).
 ## Usage
 
 ```jsx {6,11,19,23}
-import { createComponent, onMounted, onUnmounted } from 'vue-function-api';
+import { createComponent, onMounted, onUnmounted } from '@vue/composition-api';
 import { useRouter } from '@u3u/vue-hooks';
 
 const Demo = createComponent({

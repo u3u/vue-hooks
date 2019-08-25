@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import { Dispatch, Commit } from 'vuex';
-import { Wrapper } from 'vue-function-api';
+import { Ref } from '@vue/composition-api';
 
 type Dictionary<T> = { [key: string]: T };
-type Computed = Wrapper<any>;
+type Computed = Ref<any>;
 type MutationMethod = (...args: any[]) => void;
 type ActionMethod = (...args: any[]) => Promise<any>;
 type CustomVue = Vue & Dictionary<any>;

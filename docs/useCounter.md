@@ -5,7 +5,7 @@ Vue hook that tracks a numeric value.
 ## Usage
 
 ```jsx {6,17}
-import { createComponent } from 'vue-function-api';
+import { createComponent } from '@vue/composition-api';
 import { useCounter } from '@u3u/vue-hooks';
 
 const Demo = createComponent({

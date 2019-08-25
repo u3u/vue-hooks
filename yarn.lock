@@ -1955,6 +1955,13 @@
     source-map "~0.6.1"
     vue-template-es2015-compiler "^1.9.0"
 
+"@vue/composition-api@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-0.2.0.tgz#9e26ac3a4be0e8f25b1ab8c1710bfb2e106513fb"
+  integrity sha512-JUMegz0tQQ/JjhlQWXtS5zeOkPrdmL3dyyFuZZZVRZL3OY4YtuzQmyX7nZezoiUdSt84XAQA7bLH9L2muhb0pw==
+  dependencies:
+    tslib "^1.9.3"
+
 "@vue/test-utils@^1.0.0-beta.29":
   version "1.0.0-beta.29"
   resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.0.0-beta.29.tgz#c942cf25e891cf081b6a03332b4ae1ef430726f0"
@@ -12492,13 +12499,6 @@ vm-browserify@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
-
-vue-function-api@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/vue-function-api/-/vue-function-api-2.2.0.tgz#06aeb76fcbcf27d8591a1f87cee8d3d771d7feed"
-  integrity sha512-Qyg5IIi+1Zj5U3aHQ55K8nB98BwytxDv0HGWPssQFo9M32QDXHIwzgSE+BhUlzyclb1XkPiLubXApja1WQSwSQ==
-  dependencies:
-    tslib "^1.9.3"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.3"

@@ -1,10 +1,7 @@
-import { value, watch, Wrapper } from 'vue-function-api';
-import { UnwrapValue } from 'vue-function-api/dist/wrappers';
+import { ref, watch, Ref } from '@vue/composition-api';
 
-export default function usePrevious<T>(
-  state: Wrapper<UnwrapValue<T>> | (() => UnwrapValue<T>),
-) {
-  const previous = value<T>(undefined!);
+export default function usePrevious<T>(state: Ref<T> | (() => T)) {
+  const previous = ref<T>(undefined!);
 
   watch(state, (_, oldVal) => {
     previous.value = oldVal;

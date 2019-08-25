@@ -5,7 +5,7 @@ Vue hook that process date via [`dayjs`](https://github.com/iamkun/dayjs).
 ## Usage
 
 ```jsx {6,11}
-import { createComponent } from 'vue-function-api';
+import { createComponent } from '@vue/composition-api';
 import { useDate } from '@u3u/vue-hooks';
 
 const Demo = createComponent({

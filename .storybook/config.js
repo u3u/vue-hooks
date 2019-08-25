@@ -1,9 +1,9 @@
 import { configure, addParameters } from '@storybook/vue';
 import { themes } from '@storybook/theming';
-import { plugin } from 'vue-function-api';
 import Vue from 'vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
+import VueCompositionAPI from '@vue/composition-api';
 import hooks from '../src';
 import 'github-markdown-css';
 import 'prismjs/themes/prism-tomorrow.css';
@@ -18,10 +18,10 @@ addParameters({
   },
 });
 
-Vue.use(hooks);
-Vue.use(plugin);
 Vue.use(Vuex);
 Vue.use(VueRouter);
+Vue.use(VueCompositionAPI);
+Vue.use(hooks);
 
 function loadStories() {
   const req = require.context('../src', true, /\.story\.tsx$/);

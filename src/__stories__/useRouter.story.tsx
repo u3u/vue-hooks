@@ -6,11 +6,11 @@ import VueRouter, { Route } from 'vue-router';
 import { storiesOf } from '@storybook/vue';
 import {
   createComponent,
-  value,
+  ref,
   watch,
   onMounted,
   onUnmounted,
-} from 'vue-function-api';
+} from '@vue/composition-api';
 import { useRouter } from '..';
 import { ShowDocs } from './components';
 
@@ -77,7 +77,7 @@ const Demo = createComponent({
 
   setup() {
     const { route, router } = useRouter();
-    const time = value(5);
+    const time = ref(5);
     let timerId;
 
     watch(route, () => {

@@ -1,4 +1,4 @@
-import { computed } from 'vue-function-api';
+import { computed } from '@vue/composition-api';
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
 import { useState, useGetters, useMutations, useActions } from './interface';
 import { getRuntimeVM } from '../../util/runtime';

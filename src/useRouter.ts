@@ -1,4 +1,4 @@
-import { computed } from 'vue-function-api';
+import { computed } from '@vue/composition-api';
 import { getRuntimeVM } from './util/runtime';
 
 export default function useRouter() {

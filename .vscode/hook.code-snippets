@@ -3,7 +3,7 @@
     "scope": "typescript",
     "prefix": "use",
     "body": [
-      "import { $1 } from 'vue-function-api';",
+      "import { $1 } from '@vue/composition-api';",
       "",
       "export default function use${2:Hook}() {",
       "  $3",

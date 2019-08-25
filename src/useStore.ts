@@ -1,4 +1,4 @@
-import { computed } from 'vue-function-api';
+import { computed } from '@vue/composition-api';
 import { Store } from 'vuex';
 import { getRuntimeVM } from './util/runtime';
 

@@ -1,8 +1,8 @@
 /* eslint import/no-extraneous-dependencies: off */
 import Vue from 'vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
-import { plugin, createComponent } from 'vue-function-api';
-import { SetupContext } from 'vue-function-api/dist/types/vue';
+import VueCompositionAPI, { createComponent } from '@vue/composition-api';
+import { SetupFunction, Data } from '@vue/composition-api/dist/component';
 import { createRouter, createStore } from '../mocks';
 import hooks from '..';
 
@@ -11,16 +11,10 @@ const router = createRouter(localVue);
 const store = createStore(localVue);
 
 localVue.use(hooks);
-localVue.use(plugin);
+localVue.use(VueCompositionAPI);
 
-export type SetupFunction<Props> = (
-  this: undefined,
-  props: { [K in keyof Props]: Props[K] },
-  context: SetupContext,
-) => object | null | undefined | void;
-
-export default function renderHook<V, Props = unknown>(
-  setup: SetupFunction<Props>,
+export default function renderHook<V, Props = unknown, Data = unknown>(
+  setup: SetupFunction<Props, Data>,
 ) {
   const App = createComponent({
     template: `

@@ -1,8 +1,8 @@
-import { value, computed, onMounted, onUnmounted } from 'vue-function-api';
+import { ref, computed, onMounted, onUnmounted } from '@vue/composition-api';
 
 export default function useWindowSize() {
-  const width = value(window.innerWidth);
-  const height = value(window.innerHeight);
+  const width = ref(window.innerWidth);
+  const height = ref(window.innerHeight);
   const update = () => {
     width.value = window.innerWidth;
     height.value = window.innerHeight;

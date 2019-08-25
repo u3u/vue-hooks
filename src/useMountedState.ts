@@ -1,8 +1,8 @@
 import Vue from 'vue';
-import { value, onMounted } from 'vue-function-api';
+import { ref, onMounted } from '@vue/composition-api';
 
 export default function useMountedState() {
-  const isMounted = value(false);
+  const isMounted = ref(false);
 
   onMounted(async () => {
     await Vue.nextTick();

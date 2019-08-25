@@ -2,7 +2,7 @@
 import 'vue-tsx-support/enable-check';
 import Vue from 'vue';
 import { storiesOf } from '@storybook/vue';
-import { createComponent, value } from 'vue-function-api';
+import { createComponent, ref } from '@vue/composition-api';
 import { usePrevious } from '..';
 import { ShowDocs } from './components';
 
@@ -17,7 +17,7 @@ const Docs = () => <ShowDocs md={require('../../docs/usePrevious.md')} />;
 
 const Demo = createComponent({
   setup() {
-    const count = value(0);
+    const count = ref(0);
     const prevCount = usePrevious(count);
 
     const increment = () => count.value++;
