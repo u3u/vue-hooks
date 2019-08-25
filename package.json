@@ -9,7 +9,8 @@
     "vue",
     "vue-use",
     "vue-hooks",
-    "vue-function-api"
+    "vue-function-api",
+    "vue-composition-api"
   ],
   "main": "lib/index.js",
   "module": "esm/index.js",

@@ -2,13 +2,15 @@
 
 > ⚡️ Awesome Vue Hooks
 
-Using [`vue-function-api`](https://github.com/vuejs/vue-function-api) to implement useful vue hooks.  
+Using [`@vue/composition-api`](https://github.com/vuejs/composition-api) to implement useful vue hooks.  
 Vue 3.0 has not been released yet, it allows you to use functional-based components in advance.
+
+⚠️ 2.x has been switched to `@vue/composition-api`, if you are using version 1.x please use [`vue-function-api`](https://npmjs.com/vue-function-api)
 
 ## Install
 
 ```sh
-yarn add vue-function-api @u3u/vue-hooks
+yarn add @vue/composition-api @u3u/vue-hooks
 ```
 
 ## Documentation [![Netlify Status](https://api.netlify.com/api/v1/badges/e93d1698-f766-4529-b8e0-91fa1162d4cb/deploy-status)](https://app.netlify.com/sites/vue-hooks/deploys)
