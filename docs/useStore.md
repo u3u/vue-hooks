@@ -38,11 +38,11 @@ const Demo = createComponent({
 ## Reference
 
 ```typescript
-function useStore<TState>(): Wrapper<Store<TState>>;
+function useStore<TState>(): Ref<Store<TState>>;
 ```
 
 ### `ReturnValue`
 
-- [`Wrapper<Store<TState>>`](https://vuex.vuejs.org/api/#vuex-store-instance-properties)
+- [`Ref<Store<TState>>`](https://vuex.vuejs.org/api/#vuex-store-instance-properties)
 
 _[`TState`](https://www.typescriptlang.org/docs/handbook/generics.html) is used to specify the type of `store.state`_

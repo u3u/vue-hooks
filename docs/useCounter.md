@@ -44,7 +44,7 @@ const Demo = createComponent({
 function useCounter(
   initialValue?: number,
 ): [
-  Wrapper<number>,
+  Ref<number>,
   {
     inc: (delta?: number) => number;
     dec: (delta?: number) => number;
@@ -66,5 +66,5 @@ function useCounter(
 
 ### `ReturnValue`
 
-0. [`Wrapper<number>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
+0. [`Ref<number>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
 1. `Actions`

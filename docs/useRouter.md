@@ -47,12 +47,12 @@ const Demo = createComponent({
 
 ```typescript
 function useRouter(): {
-  route: Wrapper<Route>;
+  route: Ref<Route>;
   router: VueRouter;
 };
 ```
 
 ### `ReturnValue`
 
-- `route`: [`Wrapper<Route>`](https://router.vuejs.org/api/#route-object-properties)
+- `route`: [`Ref<Route>`](https://router.vuejs.org/api/#route-object-properties)
 - `router`: [`VueRouter`](https://router.vuejs.org/api/#router-instance-methods)

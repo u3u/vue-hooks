@@ -30,16 +30,16 @@ const Demo = createComponent({
 
 ```typescript
 function useWindowSize(): {
-  width: Wrapper<number>;
-  height: Wrapper<number>;
-  widthPixel: Wrapper<string>;
-  heightPixel: Wrapper<string>;
+  width: Ref<number>;
+  height: Ref<number>;
+  widthPixel: Ref<string>;
+  heightPixel: Ref<string>;
 };
 ```
 
 ### `ReturnValue`
 
-- `width`: [`Wrapper<number>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
-- `height`: [`Wrapper<number>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
-- `widthPixel`: [`Wrapper<string>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
-- `heightPixel`: [`Wrapper<string>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
+- `width`: [`Ref<number>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
+- `height`: [`Ref<number>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
+- `widthPixel`: [`Ref<string>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
+- `heightPixel`: [`Ref<string>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)

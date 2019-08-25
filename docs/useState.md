@@ -43,10 +43,10 @@ const Demo = createComponent({
 function useState(
   namespace?: string,
   map: Array<string> | Object<string | function>,
-): Object<Wrapper<any>>;
+): Object<Ref<any>>;
 ```
 
 > The usage of the `useState` hook is exactly the same as the usage of [`mapState`](https://vuex.vuejs.org/api/#mapstate) (the same parameters)  
-> The only difference is that the return value of `useState` is the [`Wrapper<any>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7) dictionary. For each item in the dictionary, you need to use `.value` to get its actual value.
+> The only difference is that the return value of `useState` is the [`Ref<any>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7) dictionary. For each item in the dictionary, you need to use `.value` to get its actual value.
 
 _Please refer to the documentation of [`mapState`](https://vuex.vuejs.org/api/#mapstate) for details._

@@ -30,10 +30,7 @@ const Demo = createComponent({
 ## Reference
 
 ```typescript
-function useDate(
-  date?: dayjs.ConfigType,
-  interval?: number,
-): Wrapper<dayjs.Dayjs>;
+function useDate(date?: dayjs.ConfigType, interval?: number): Ref<dayjs.Dayjs>;
 ```
 
 ### `Arguments`
@@ -54,4 +51,4 @@ function useDate(
 
 ### `ReturnValue`
 
-- [`Wrapper<dayjs.Dayjs>`](https://github.com/iamkun/dayjs/blob/19affc84bbec84bad840e310b390db5f92b2499a/types/index.d.ts#L15-L95)
+- [`Ref<dayjs.Dayjs>`](https://github.com/iamkun/dayjs/blob/19affc84bbec84bad840e310b390db5f92b2499a/types/index.d.ts#L15-L95)
