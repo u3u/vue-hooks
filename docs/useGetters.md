@@ -46,6 +46,6 @@ function useGetters(
 ```
 
 > The usage of the `useGetters` hook is exactly the same as the usage of [`mapGetters`](https://vuex.vuejs.org/api/#mapgetters) (the same parameters)  
-> The only difference is that the return value of `useGetters` is the [`Ref<any>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7) dictionary. For each item in the dictionary, you need to use `.value` to get its actual value.
+> The only difference is that the return value of `useGetters` is the [`Ref<any>`](https://github.com/vuejs/composition-api/blob/a7a68bda5d32139c6cf05b45e385cf8d4ce86707/src/reactivity/ref.ts#L8-L10) dictionary. For each item in the dictionary, you need to use `.value` to get its actual value.
 
 _Please refer to the documentation of [`mapGetters`](https://vuex.vuejs.org/api/#mapgetters) for details._

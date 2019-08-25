@@ -45,10 +45,10 @@ function usePrevious<T>(state: Ref<T> | (() => T)): Ref<T>;
 
   `props` or `Ref<any>`
 
-  - Type: [`Ref<T> | (() => T)`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
+  - Type: [`Ref<T> | (() => T)`](https://github.com/vuejs/composition-api/blob/a7a68bda5d32139c6cf05b45e385cf8d4ce86707/src/reactivity/ref.ts#L8-L10)
 
 ### `ReturnValue`
 
-- [`Ref<T>`](https://github.com/vuejs/vue-function-api/blob/1d532fe684e2343973ae46fc3ef93e497e6514b1/src/wrappers/index.ts#L5-L7)
+- [`Ref<T>`](https://github.com/vuejs/composition-api/blob/a7a68bda5d32139c6cf05b45e385cf8d4ce86707/src/reactivity/ref.ts#L8-L10)
 
 _[`T`](https://www.typescriptlang.org/docs/handbook/generics.html) depends on your `arguments` type_
