@@ -12,7 +12,6 @@ export { default as useGetters } from './useGetters';
 export { default as useMutations } from './useMutations';
 export { default as useActions } from './useActions';
 export { default as useRouter } from './useRouter';
-export { default as useRef } from './useRef';
 export { default as useMountedState } from './useMountedState';
 export { default as useTimeout } from './useTimeout';
 export { default as useMedia } from './useMedia';
