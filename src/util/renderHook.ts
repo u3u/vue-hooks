@@ -27,6 +27,7 @@ export default function renderHook<V, Props = unknown, Data = unknown>(
     setup,
   });
 
+  // @ts-ignore
   return shallowMount<Vue & V>(App, {
     localVue,
     router,
