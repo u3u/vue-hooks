@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/u3u/vue-hooks/compare/v2.0.0...v2.0.1) (2019-08-25)
+
+
+### Bug Fixes
+
+* **release:** semantic release ([c5d2ee8](https://github.com/u3u/vue-hooks/commit/c5d2ee8))
+
 # [1.4.0](https://github.com/u3u/vue-hooks/compare/v1.3.0...v1.4.0) (2019-08-16)
 
 
