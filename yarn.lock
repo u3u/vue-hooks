@@ -1956,9 +1956,9 @@
     vue-template-es2015-compiler "^1.9.0"
 
 "@vue/composition-api@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-0.2.0.tgz#9e26ac3a4be0e8f25b1ab8c1710bfb2e106513fb"
-  integrity sha512-JUMegz0tQQ/JjhlQWXtS5zeOkPrdmL3dyyFuZZZVRZL3OY4YtuzQmyX7nZezoiUdSt84XAQA7bLH9L2muhb0pw==
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-0.2.1.tgz#d6b4327b308ac474982536f86bf44dd00271742d"
+  integrity sha512-eRmvToKbNjFXYyuFZ8e9KUcBXwDj0PQR1ngZP4u3R2jR9yjIbvgEsj7IKoddSKYiEkMttn+JiaSKX7n+REQBBw==
   dependencies:
     tslib "^1.9.3"
 
