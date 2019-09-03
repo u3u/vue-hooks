@@ -12561,9 +12561,9 @@ vue-template-es2015-compiler@^1.9.0:
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
 vue-tsx-support@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/vue-tsx-support/-/vue-tsx-support-2.3.1.tgz#b485644a6a0dc31c0366f6a25bf71444cb8231a5"
-  integrity sha512-r+ILRDT5JLAvMQfPsd9MLt8FuZlesf0ydNRHZzEafSAtIkiu5BEK0UfHzrFJBVhSouyM9mGrLsB7AnCHlnXkyw==
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/vue-tsx-support/-/vue-tsx-support-2.3.2.tgz#4354c664f9ed208861777ff5972ba87fee282898"
+  integrity sha512-OlaN/eZGbVSpaOHTwJo8hf9b0Vg839pdPYxpwwgk0l7MN/2840zn9c/nO/zUU3jXsFa761v1b+D3F93zAdPobg==
 
 vue@^2.0.0, vue@^2.6.10:
   version "2.6.10"
