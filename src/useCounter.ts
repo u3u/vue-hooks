@@ -13,5 +13,5 @@ export default function useCounter(initialValue = 0) {
   };
   const actions = { inc, dec, get, set, reset };
 
-  return [count, actions] as [typeof count, typeof actions];
+  return [count, actions] as const;
 }
