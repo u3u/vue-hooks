@@ -15,6 +15,7 @@ export { default as useRouter } from './useRouter';
 export { default as useMountedState } from './useMountedState';
 export { default as useTimeout } from './useTimeout';
 export { default as useMedia } from './useMedia';
+export { default as useClipboard } from './useClipboard';
 
 export default function install(Vue: VueConstructor) {
   Vue.mixin({ beforeCreate: setRuntimeVM });

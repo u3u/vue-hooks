@@ -3,12 +3,15 @@ import Vue from 'vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import VueCompositionAPI, { createComponent } from '@vue/composition-api';
 import { SetupFunction, Data } from '@vue/composition-api/dist/component';
+import VueClipboard from 'vue-clipboard2';
 import { createRouter, createStore } from '../mocks';
 import hooks from '..';
 
 const localVue = createLocalVue();
 const router = createRouter(localVue);
 const store = createStore(localVue);
+
+localVue.use(VueClipboard);
 
 localVue.use(hooks);
 localVue.use(VueCompositionAPI);
