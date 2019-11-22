@@ -63,6 +63,7 @@ export default createComponent({
 - [`useGetters`](https://vue-hooks.netlify.com/?path=/story/usegetters--docs) &mdash; A hook for [`mapGetters`](https://vuex.vuejs.org/api/#mapgetters).
 - [`useMutations`](https://vue-hooks.netlify.com/?path=/story/usemutations--docs) &mdash; A hook for [`mapMutations`](https://vuex.vuejs.org/api/#mapmutations).
 - [`useActions`](https://vue-hooks.netlify.com/?path=/story/useactions--docs) &mdash; A hook for [`mapActions`](https://vuex.vuejs.org/api/#mapactions).
+- [`useClipboard`](https://vue-hooks.netlify.com/?path=/story/useclipboard--docs) &mdash; A hook for [`vue-clipboard2`](https://github.com/Inndy/vue-clipboard2).
 
 ## Contributing
 

@@ -99,6 +99,7 @@
     "semantic-release": "^15.13.24",
     "typescript": "^3.5.3",
     "vue": "^2.6.10",
+    "vue-clipboard2": "^0.3.0",
     "vue-loader": "^15.7.1",
     "vue-router": "^3.1.2",
     "vue-template-compiler": "^2.6.10",
