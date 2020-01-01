@@ -74,7 +74,7 @@
     "@types/storybook__vue": "^5.0.2",
     "@typescript-eslint/parser": "^2.0.0",
     "@vue/babel-preset-jsx": "^1.1.0",
-    "@vue/composition-api": "^0.2.0",
+    "@vue/composition-api": "^0.3.4",
     "@vue/test-utils": "^1.0.0-beta.29",
     "all-contributors-cli": "^6.8.1",
     "babel-loader": "^8.0.6",
