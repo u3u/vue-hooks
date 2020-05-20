@@ -31,7 +31,7 @@ function useAsync<Result = any>(
   // execute async function
   function run(...args: any[]) {
     loading.value = true;
-    fn(...args)
+    return fn(...args)
       .then((resp: Result) => {
         if (resp) {
           data.value = resp;
@@ -59,8 +59,11 @@ function useAsync<Result = any>(
     // 只有 manual 为 true 时才执行
     if (manual) {
       const mergedParams = new Set([...params, ...args]);
-      run(...Array.from(mergedParams));
+      return run(...Array.from(mergedParams));
     }
+    return Promise.reject(
+      new Error('Use manual options to call function manually'),
+    );
   }
 
   if (!manual) {
