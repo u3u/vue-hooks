@@ -10,7 +10,7 @@ type Inject = {
   loading: boolean;
   error: Error | null;
   resp: any;
-  run: () => Promise<any>;
+  run: (...args: any[]) => Promise<any>;
 };
 
 const sleep = (ms = 0) =>
@@ -44,7 +44,7 @@ const Demo = defineComponent({
         <div>loading state: {loading.toString()}</div>
         <div>resp state: {resp}</div>
         <div style={{ marginTop: '10px' }}>error state: {error}</div>
-        <button onClick={() => run()}>
+        <button onClick={() => run(2000)}>
           {loading ? 'loading...' : 'Click to fetch something'}
         </button>
       </div>
