@@ -2,7 +2,7 @@
 import 'vue-tsx-support/enable-check';
 import Vue from 'vue';
 import { storiesOf } from '@storybook/vue';
-import { createComponent } from '@vue/composition-api';
+import { defineComponent } from '@vue/composition-api';
 import { useCounter } from '..';
 import { ShowDocs } from './components';
 
@@ -16,7 +16,7 @@ type Inject = {
 
 const Docs = () => <ShowDocs md={require('../../docs/useCounter.md')} />;
 
-const Demo = createComponent({
+const Demo = defineComponent({
   setup() {
     const [count, { inc, dec, set, reset }] = useCounter();
     return {

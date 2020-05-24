@@ -5,10 +5,10 @@ Vue hook that tracks a numeric value.
 ## Usage
 
 ```jsx {6,17}
-import { createComponent } from '@vue/composition-api';
+import { defineComponent } from '@vue/composition-api';
 import { useCounter } from '@u3u/vue-hooks';
 
-const Demo = createComponent({
+const Demo = defineComponent({
   setup() {
     const [count, { inc, dec, set, reset }] = useCounter();
     return {

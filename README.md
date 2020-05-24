@@ -31,10 +31,10 @@ Vue.use(VueCompositionAPI); // Don't forget to use the plugin!
 ```
 
 ```jsx
-import { createComponent } from '@vue/composition-api';
+import { defineComponent } from '@vue/composition-api';
 import { useWindowSize } from '@u3u/vue-hooks';
 
-export default createComponent({
+export default defineComponent({
   setup() {
     const { width, height, widthPixel, heightPixel } = useWindowSize();
     return { width, height, widthPixel, heightPixel };

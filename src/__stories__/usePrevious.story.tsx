@@ -2,7 +2,7 @@
 import 'vue-tsx-support/enable-check';
 import Vue from 'vue';
 import { storiesOf } from '@storybook/vue';
-import { createComponent, ref } from '@vue/composition-api';
+import { defineComponent, ref } from '@vue/composition-api';
 import { usePrevious } from '..';
 import { ShowDocs } from './components';
 
@@ -15,7 +15,7 @@ type Inject = {
 
 const Docs = () => <ShowDocs md={require('../../docs/usePrevious.md')} />;
 
-const Demo = createComponent({
+const Demo = defineComponent({
   setup() {
     const count = ref(0);
     const prevCount = usePrevious(count);

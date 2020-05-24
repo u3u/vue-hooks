@@ -7,10 +7,10 @@ Vue hook for [`mapState`](https://vuex.vuejs.org/api/#mapstate).
 ## Usage
 
 ```jsx {7,8,14,18}
-import { createComponent, computed } from '@vue/composition-api';
+import { defineComponent, computed } from '@vue/composition-api';
 import { useState } from '@u3u/vue-hooks';
 
-const Demo = createComponent({
+const Demo = defineComponent({
   setup() {
     const state = {
       ...useState(['count']),

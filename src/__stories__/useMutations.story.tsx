@@ -2,7 +2,7 @@
 import 'vue-tsx-support/enable-check';
 import Vue from 'vue';
 import { storiesOf } from '@storybook/vue';
-import { createComponent } from '@vue/composition-api';
+import { defineComponent } from '@vue/composition-api';
 import { useState, useGetters, useMutations } from '..';
 import { ShowDocs } from './components';
 import { createStore } from '../mocks';
@@ -18,7 +18,7 @@ type Inject = {
 
 const Docs = () => <ShowDocs md={require('../../docs/useMutations.md')} />;
 
-const Demo = createComponent({
+const Demo = defineComponent({
   store: createStore(),
 
   setup() {

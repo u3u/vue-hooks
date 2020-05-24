@@ -7,10 +7,10 @@ Vue hook for [vuex](https://vuex.vuejs.org).
 ## Usage
 
 ```jsx {6,12,16}
-import { createComponent, computed } from '@vue/composition-api';
+import { defineComponent, computed } from '@vue/composition-api';
 import { useStore } from '@u3u/vue-hooks';
 
-const Demo = createComponent({
+const Demo = defineComponent({
   setup() {
     const store = useStore();
     const plusOne = computed(() => store.value.state.count + 1);

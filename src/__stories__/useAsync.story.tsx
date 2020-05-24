@@ -2,7 +2,7 @@
 import 'vue-tsx-support/enable-check';
 import Vue from 'vue';
 import { storiesOf } from '@storybook/vue';
-import { createComponent } from '@vue/composition-api';
+import { defineComponent } from '@vue/composition-api';
 import { useAsync } from '..';
 import { ShowDocs } from './components';
 
@@ -22,7 +22,7 @@ const sleep = (ms = 0) =>
 
 const Docs = () => <ShowDocs md={require('../../docs/useAsync.md')} />;
 
-const Demo = createComponent({
+const Demo = defineComponent({
   setup() {
     const { run, loading, resp, error } = useAsync(sleep, {
       manual: true,

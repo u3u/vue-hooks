@@ -2,7 +2,7 @@
 import 'vue-tsx-support/enable-check';
 import Vue from 'vue';
 import { storiesOf } from '@storybook/vue';
-import { createComponent } from '@vue/composition-api';
+import { defineComponent } from '@vue/composition-api';
 import { useDate, dayjs } from '..';
 import { ShowDocs } from './components';
 
@@ -12,7 +12,7 @@ type Inject = {
 
 const Docs = () => <ShowDocs md={require('../../docs/useDate.md')} />;
 
-const Demo = createComponent({
+const Demo = defineComponent({
   setup() {
     const date = useDate(Date.now(), 1000);
     return { date };

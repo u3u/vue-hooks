@@ -5,7 +5,7 @@ import Vue from 'vue';
 import VueRouter, { Route } from 'vue-router';
 import { storiesOf } from '@storybook/vue';
 import {
-  createComponent,
+  defineComponent,
   ref,
   watch,
   onMounted,
@@ -51,7 +51,7 @@ const NotFound: any = () => (
   </a>
 );
 
-const Demo = createComponent({
+const Demo = defineComponent({
   router: new VueRouter({
     routes: [
       {

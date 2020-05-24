@@ -1,10 +1,10 @@
-import { ref, Ref } from '@vue/composition-api';
+import { ref, Ref, onMounted } from '@vue/composition-api';
 
 export interface ReturnValue<Result = any> {
   loading: Ref<boolean>;
   error: Ref<Error>;
   resp: Ref<Result>;
-  run: (...args: any[]) => void;
+  run: (...args: any[]) => void | Promise<Result>;
 }
 
 export interface Options<Result = any> {
@@ -35,13 +35,13 @@ function useAsync<Result = any>(
       .then((resp: Result) => {
         if (resp) {
           data.value = resp;
-          if (typeof onSuccess === 'function') {
-            onSuccess(resp, params);
-          }
-        } else {
-          Promise.reject(
-            new Error('Request success but no response data back'),
-          );
+          return resp;
+        }
+        return initialData;
+      })
+      .then((returns: Result) => {
+        if (typeof onSuccess === 'function') {
+          onSuccess(returns, params);
         }
       })
       .catch((err: Error) => {
@@ -55,20 +55,18 @@ function useAsync<Result = any>(
       });
   }
 
-  function start(...args: any[]) {
-    // 只有 manual 为 true 时才执行
+  function start(...args: any[]): Promise<Result | any> {
     if (manual) {
-      const mergedParams = new Set([...params, ...args]);
-      return run(...Array.from(mergedParams));
+      return run(...args);
     }
-    return Promise.reject(
-      new Error('Use manual options to call function manually'),
-    );
+    return Promise.resolve(initialData);
   }
 
-  if (!manual) {
-    run(...params);
-  }
+  onMounted(() => {
+    if (!manual) {
+      run(...params);
+    }
+  });
 
   return {
     loading,

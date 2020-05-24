@@ -5,12 +5,12 @@ Vue hook for handling async state such as loading, success, error
 # Usage
 
 ```jsx {9,10,14,17,30}
-import { createComponent } from '@vue/composition-api';
+import { defineComponent } from '@vue/composition-api';
 import { useAsync } from '@u3u/vue-hooks';
 // async function like ajax etc
 import { getSomething } from '@vue/services';
 
-const Demo = createComponent({
+const Demo = defineComponent({
   setup() {
     const { loading, resp, error, run } = useAsync(getSomething, {
       manual: true,

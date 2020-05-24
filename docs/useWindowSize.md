@@ -5,10 +5,10 @@ Vue hook that tracks dimensions of the browser window.
 ## Usage
 
 ```jsx {6,11}
-import { createComponent } from '@vue/composition-api';
+import { defineComponent } from '@vue/composition-api';
 import { useWindowSize } from '@u3u/vue-hooks';
 
-const Demo = createComponent({
+const Demo = defineComponent({
   setup() {
     const { width, height } = useWindowSize();
     return { width, height };
