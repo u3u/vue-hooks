@@ -79,7 +79,7 @@
     "all-contributors-cli": "^6.8.1",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
-    "eslint": "^6.2.2",
+    "eslint": "^7.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-import": "^2.18.2",
