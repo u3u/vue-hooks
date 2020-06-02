@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { Dispatch, Commit } from 'vuex';
 import { Ref } from '@vue/composition-api';
 
-type Dictionary<T> = { [key: string]: T };
+type Dictionary<T> = Record<string, T>;
 type Computed = Ref<any>;
 type MutationMethod = (...args: any[]) => void;
 type ActionMethod = (...args: any[]) => Promise<any>;
