@@ -96,7 +96,7 @@
     "prettier": "^1.18.2",
     "prismjs": "^1.17.1",
     "rimraf": "^3.0.0",
-    "semantic-release": "^15.13.24",
+    "semantic-release": "^17.2.3",
     "typescript": "^3.5.3",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.1",
