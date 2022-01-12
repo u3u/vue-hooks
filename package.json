@@ -87,7 +87,7 @@
     "github-markdown-css": "^3.0.1",
     "jest": "^24.8.0",
     "lint-staged": "^9.2.3",
-    "markdown-it": "^9.1.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-highlight-lines": "^1.0.2",
     "markdown-it-link-attributes": "^2.1.0",
     "markdown-it-loader": "^0.7.0",
